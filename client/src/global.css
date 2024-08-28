@@ -10,3 +10,26 @@ body {
 .flex-center {
     @apply flex justify-center items-center;
 }
+.bg-secondary {
+    @apply bg-neutral-500 dark:bg-neutral-400;
+}
+
+.text-secondary {
+    @apply text-neutral-500 dark:text-neutral-400;
+}
+
+.border-secondary {
+    @apply bg-neutral-500 dark:bg-neutral-400;
+}
+
+.btn {
+    @apply text-white rounded flex justify-center items-center font-semibold duration-150;
+}
+
+.btn-red {
+    @apply text-white rounded flex justify-center items-center font-semibold bg-red-600 hover:bg-red-700 active:bg-red-800 duration-150;
+}
+
+.btn-neutral {
+    @apply text-white rounded flex justify-center items-center font-semibold bg-neutral-400 dark:bg-neutral-600 hover:bg-neutral-500 dark:hover:bg-neutral-700 active:bg-neutral-600 dark:active:bg-neutral-800 duration-150;
+}
