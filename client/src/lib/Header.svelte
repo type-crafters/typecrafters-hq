@@ -29,7 +29,6 @@
         <div id="navigation-wrapper" class="bg-white dark:bg-black rounded border lg:border-0 border-neutral-500 px-2 py-4 min-w-48 absolute z-10 top-12 right-0 lg:static flex flex-col-reverse lg:flex-row items-center gap-y-6 gap-x-12">
             <nav id="header-navbar" class="grid grid-flow-row lg:grid-flow-col gap-6">
                 <a href="/games" class="hover:text-red-700 active:text-red-800 duration-150">Games</a>
-                <a href="/about" class="hover:text-red-700 active:text-red-800 duration-150">About</a>
                 <a href="/blog" class="hover:text-red-700 active:text-red-800 duration-150">Blog</a>
                 <a href="/team" class="hover:text-red-700 active:text-red-800 duration-150">Our team</a>
                 <a href="/contact" class="hover:text-red-700 active:text-red-800 duration-150">Contact us</a>
