@@ -45,8 +45,12 @@
                     </p>
                 </div>
             </div>
-            <div id="team-members" class="grid gap-x-4 gap-y-6">
-                <MemberCard/>            
+            <div id="team-members">
+                <h2 class="text-xl font-semibold my-2">Meet the team</h2>
+                <MemberCard/>
+                <MemberCard/>
+                <MemberCard/>
+                <MemberCard/>
             </div>
         </div>
     </section>
@@ -54,7 +58,7 @@
 
 <style lang="postcss">
     .text-container {
-        @apply my-4;
+        @apply my-6;
     }
 
     .text-container p {

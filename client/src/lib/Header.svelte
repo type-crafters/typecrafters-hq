@@ -14,7 +14,7 @@
 </script>
 <header id="website-header" class="bg-white dark:bg-black text-black dark:text-white flex justify-between items-center px-12 py-4 sticky top-0 min-h-20 border-b border-b-neutral-400 dark:border-b-white">
     <div>
-        <a href="/" id="index-anchor" class="text-2xl flex items-end gap-6 font-semibold">
+        <a href="/" id="index-anchor" class="text-2xl flex items-end gap-6 font-semibold" title="Go home">
             <i class="bi bi-tools"></i>
             <h1 id="page-title">
                 <span class="hidden md:inline">TypeCrafters</span>
@@ -36,7 +36,7 @@
             <div id="user-options" class="w-full lg:w-auto">
                 {#if !loggedIn()}
                 <div id="user-not-verified" class="flex flex-col lg:flex-row gap-y-4 gap-x-6 text-white">
-                    <a href="/users/signup" class="px-3 py-1 btn btn-red">Sign up</a>
+                    <a href="/users/register" class="px-3 py-1 btn btn-red">Sign up</a>
                     <a href="/users/login" class="px-3 py-1 btn btn-neutral">Log in</a>
                 </div>
                 {:else}
