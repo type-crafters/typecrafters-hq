@@ -3,4 +3,5 @@
     import "../font.css";
     import "../global.css";
 </script>
-<slot/>
+
+<slot />

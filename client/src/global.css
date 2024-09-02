@@ -7,6 +7,18 @@ body {
     font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.page-title {
+    @apply text-3xl font-bold my-4
+}
+
+.page-subtitle {
+    @apply text-2xl font-bold my-3
+}
+
+.page-subheading {
+    @apply text-xl font-semibold my-2;
+}
+
 .flex-center {
     @apply flex justify-center items-center;
 }
@@ -18,20 +30,16 @@ body {
     @apply text-neutral-500 dark:text-neutral-400;
 }
 
-.border-secondary {
-    @apply bg-neutral-500 dark:bg-neutral-400;
-}
-
 .btn {
     @apply text-white rounded flex justify-center items-center font-semibold duration-150;
 }
 
 .btn-red {
-    @apply text-white rounded flex justify-center items-center font-semibold bg-red-600 hover:bg-red-700 active:bg-red-800 duration-150;
+    @apply bg-red-600 hover:bg-red-800 active:bg-red-900 duration-150;
 }
 
 .btn-neutral {
-    @apply text-white rounded flex justify-center items-center font-semibold bg-neutral-400 dark:bg-neutral-600 hover:bg-neutral-500 dark:hover:bg-neutral-700 active:bg-neutral-600 dark:active:bg-neutral-800 duration-150;
+    @apply bg-neutral-400 dark:bg-neutral-600 hover:bg-neutral-500 dark:hover:bg-neutral-700 active:bg-neutral-600 dark:active:bg-neutral-800;
 }
 
 .input-container {
@@ -52,4 +60,8 @@ body {
 
 .blue-link {
     @apply text-blue-400 hover:underline duration-150;
+}
+
+.link-red {
+    @apply hover:text-red-700 active:text-red-800 duration-150;
 }

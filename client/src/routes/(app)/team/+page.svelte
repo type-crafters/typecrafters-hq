@@ -1,15 +1,15 @@
 <script lang="ts">
     import MemberCard from "$lib/MemberCard.svelte";
 </script>
-<main id="our-team-page">
+
+<main id="our-team-page" class="mx-4">
     <section class="container mx-auto my-12">
-        <div id="container-wrapper" class="mx-4">
             <div id="banner-container" class="w-full aspect-[3/1] h-auto rounded-xl overflow-hidden flex-center bg-neutral-800">
                 <img src="media/img/mural.jpg" alt="Mural Media File" class="min-w-full min-h-full" />
             </div>
             <div id="company-information" class="my-8">
                 <div id="statement-container" class="text-container">
-                    <h1 class="text-2xl font-bold my-4">We are TypeCrafters</h1>
+                    <h1 class="page-title">We are TypeCrafters</h1>
                     <p class="text-lg">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, corrupti nesciunt, minus sed incidunt
                         atque odio eos aperiam quis laudantium cumque amet ab quia ex doloremque possimus sapiente qui impedit.
@@ -25,7 +25,7 @@
                     </p>
                 </div>
                 <div id="vision-container" class="text-container">
-                    <h2 class="text-xl font-semibold my-2">Our vision</h2>
+                    <h2 class="page-subtitle">Our vision</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi aperiam temporibus nam a,
                         consequatur suscipit reprehenderit culpa magnam quisquam. Architecto non, accusamus est optio aliquid
@@ -35,7 +35,7 @@
                     </p>
                 </div>
                 <div id="mission-container" class="text-container">
-                    <h2 class="text-xl font-semibold my-2">Our mission</h2>
+                    <h2 class="page-subtitle">Our mission</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi aperiam temporibus nam a,
                         consequatur suscipit reprehenderit culpa magnam quisquam. Architecto non, accusamus est optio aliquid
@@ -46,13 +46,12 @@
                 </div>
             </div>
             <div id="team-members">
-                <h2 class="text-xl font-semibold my-2">Meet the team</h2>
-                <MemberCard/>
-                <MemberCard/>
-                <MemberCard/>
-                <MemberCard/>
+                <h2 class="page-subtitle">Meet the team</h2>
+                <MemberCard />
+                <MemberCard />
+                <MemberCard />
+                <MemberCard />
             </div>
-        </div>
     </section>
 </main>
 
