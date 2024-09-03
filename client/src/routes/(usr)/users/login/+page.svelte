@@ -1,5 +1,6 @@
 <script lang="ts">
     import FloatingIndex from "$lib/FloatingIndex.svelte";
+    
 </script>
 
 <main id="register-page" class="mx-4 min-h-screen flex items-center">
@@ -11,14 +12,14 @@
         <form method="post" id="resgister-form" class="flex flex-col items-center gap-8 my-8">
             <div class="input-container">
                 <label for="user">Username/Email</label>
-                <input class="textbox" type="text" name="user-email" id="user-email" />
+                <input class="textbox" type="text" name="user-email" id="user-email">
             </div>
             <div class="input-container">
                 <label for="pass">Password</label>
-                <input class="textbox" type="password" name="pass" id="pass" />
+                <input class="textbox" type="password" name="pass" id="pass">
             </div>
             <div class="input-container">
-                <input class="submit btn btn-red" type="submit" value="Log in" />
+                <input class="submit btn btn-red" type="submit" value="Log in">
             </div>
             <div class="input-container">
                 <p class="text-center">
@@ -29,5 +30,5 @@
             </div>
         </form>
     </section>
-    <FloatingIndex />
+    <FloatingIndex/>
 </main>
