@@ -19,10 +19,10 @@
 </script>
 
 <div class="tooltip" id={id + "-tooltip"}>
-    <label for={id + "-toggle"} class="tooltip-label" id={id + "-label"}>
+    <div class="tooltip-label" id={id + "-label"}>
         <i class="tooltip-icon bi bi-info-circle" id={id + "-icon"}></i>
-        <input type="checkbox" name="tooltips" id={id + "-toggle"} class="tooltip-toggle" on:change={showTooltip}>
-    </label>
+        <!-- <input type="checkbox" name="tooltips" id={id + "-toggle"} class="tooltip-toggle" on:change={showTooltip}> -->
+    </div>
     <div id={id + "-bubble"} class="tooltip-bubble">
         <p class="tooltip-text">{ @html info }</p>
     </div>
@@ -34,7 +34,7 @@
     }
 
     .tooltip-label {
-        @apply text-sm text-white  hover:text-blue-500 duration-150;
+        @apply text-sm text-white hover:text-blue-500 duration-150;
     }
 
     .tooltip-toggle {
@@ -50,7 +50,7 @@
         @apply text-blue-500;
     }
 
-    .tooltip:has(.tooltip-label .tooltip-toggle:checked) > .tooltip-bubble {
+    .tooltip-label:hover ~ .tooltip-bubble {
         display: block;
     }
 </style>

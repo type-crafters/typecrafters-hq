@@ -17,7 +17,7 @@
 
 <header
     id="website-header"
-    class="bg-white dark:bg-black text-black dark:text-white flex justify-between items-center px-12 py-4 sticky top-0 min-h-20 border-b border-b-neutral-400 dark:border-b-white"
+    class="bg-white dark:bg-black text-black dark:text-white flex justify-between items-center px-12 py-4 sticky z-50 top-0 min-h-20 border-b border-b-neutral-400 dark:border-b-white"
 >
     <div>
         <a href="/" id="index-anchor" class="text-2xl flex items-end gap-6 font-semibold" title="Go home">
@@ -38,9 +38,10 @@
         >
             <nav id="header-navbar" class="grid grid-flow-row lg:grid-flow-col gap-6">
                 <a href="/games" class="link-red">Games</a>
+                <a href="/software" class="link-red">Software</a>
                 <a href="/blog" class="link-red">Blog</a>
-                <a href="/team" class="link-red">Our team</a>
-                <a href="/contact" class="link-red">Contact us</a>
+                <a href="/about" class="link-red">About us</a>
+                <a href="/contact" class="link-red">Contact</a>
             </nav>
             <div id="user-options" class="w-full lg:w-auto">
                 {#if !loggedIn()}

@@ -2,19 +2,46 @@
     import FloatingIndex from "$lib/FloatingIndex.svelte";
     import ToolTip from "$lib/ToolTip.svelte";
 
-    const userNameToolTip = "Usernames must be between 8 and 31 characters in length and:<br>" + 
-                            "<ul class=\"my-2 ml-2\">" + 
-                            "<li>&middot;&nbsp;&nbsp;Must start with a letter (A-Z, a-z) or an underscore (_).</li>" + 
-                            "<li>&middot;&nbsp;&nbsp;Can contain letters, numbers (0-9) and underscores.</li>" + 
-                            "</ul>"; 
-    
-    function isUsernameValid(username: string)
-    {
-        const errors = {
-            1: "Username is empty!",
-            2: "Username is not valid. Check the tooltip for valid username rules."
-        }
-        return /^[A-Za-z_][A-Za-z0-9_]{7,30}$/.test(username);
+    const usernameToolTip = "Usernames must be between 8 and 31 characters long and:<br>" + 
+                        "<ul class=\"my-2 ml-2\">" + 
+                        "<li>Start with a letter (A-Z, a-z) or an underscore (_).</li>" + 
+                        "<li>Contain only letters, numbers (0-9), and underscores.</li>" + 
+                        "</ul>";
+
+    const passwordToolTip = "Passwords must be at least 8 characters long and:<br>" + 
+                        "<ul class=\"my-2 ml-2\">" + 
+                        "<li>Include at least one uppercase and one lowercase letter.</li>" + 
+                        "<li>Include at least one number.</li>" + 
+                        "</ul>";
+    function displayAlert(id: string, message: string) {
+        const alert = document.getElementById(id) as HTMLDivElement;
+
+        alert.innerText = message;
+        alert.style.display = "flex";
+    }
+
+    function fadeAlert(id: string) {
+        const alert = document.getElementById(id) as HTMLDivElement;
+
+        alert.innerText = "";
+        alert.style.display = "none"; 
+    }
+
+    function validateForm() {
+        const email = document.getElementById("email") as HTMLInputElement;
+        const pass = document.getElementById("pass") as HTMLInputElement;
+        const repeatPass = document.getElementById("repeat-pass") as HTMLInputElement;
+    }
+
+    function validateUsername() {
+        const user = document.getElementById("user") as HTMLInputElement;
+        if(user.value == "") {
+            displayAlert("user-alert", "Username cannot be empty!");
+        } else if(!/^[A-Za-z_][A-Za-z0-9_]{7,30}$/.test(user.value)) {
+            displayAlert("user-alert", "Username does not match our requirements!");
+        } else {
+            fadeAlert("user-alert");
+        }  
     }
 </script>
 
@@ -28,21 +55,23 @@
             <div class="input-container">
                 <div class="label-wrapper"> 
                     <label for="user">Username</label>
-                    <ToolTip id="user" info={userNameToolTip}/>
+                    <ToolTip id="user" info={usernameToolTip}/>
                 </div>
-                <input class="textbox" type="text" name="user" id="user">
+                <input class="textbox" type="text" name="user" id="user" on:input={validateUsername}>
+                <div id="user-alert" class="hidden gap-4 items-center text-red-500">
+                    <i class="bi bi-exclamation"></i>
+                </div>
             </div>
             <div class="input-container">
                 <div class="label-wrapper">
                     <label for="email">Email</label>
-                    <ToolTip id="email"/>
                 </div>
                 <input class="textbox" type="email" name="email" id="email">
             </div>
             <div class="input-container">
                 <div class="label-wrapper">
                     <label for="pass">Password</label>
-                    <ToolTip id="pass"/>
+                    <ToolTip id="pass" info={passwordToolTip}/>
                 </div>
                 <input class="textbox" type="password" name="pass" id="pass">
             </div>

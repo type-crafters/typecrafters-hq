@@ -4,16 +4,16 @@
         <a href="/privacy" class="link-red">Privacy Policy</a>
     </div>
     <div id="social-handles" class="footer-row justify-center flex gap-8 sm:gap-12 md:gap-24 text-xl">
-        <a href="/" class="link-red">
+        <a href="https://x.com/type_crafters" title="Check out our posts on X" class="link-red">
             <i class="bi bi-twitter-x"></i>
         </a>
-        <a href="/" class="link-red">
+        <a href="https://www.instagram.com/type_crafters" title="Follow us on Instagram" class="link-red">
             <i class="bi bi-instagram"></i>
         </a>
-        <a href="/" class="link-red">
+        <a href="https://discord.com/invite/JVjxuTjVYm" title="Join our Discord server" class="link-red">
             <i class="bi bi-discord"></i>
         </a>
-        <a href="/" class="link-red">
+        <a href="https://www.youtube.com/@type-crafters" title="Visit our YouTube channel" class="link-red">
             <i class="bi bi-youtube"></i>
         </a>
     </div>
