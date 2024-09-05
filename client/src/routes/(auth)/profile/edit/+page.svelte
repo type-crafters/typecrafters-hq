@@ -9,7 +9,7 @@
         section.style.display = "flex";
     }
 </script>
-<main id="edit-profile-page" class="mx-4 my-8">
+<main id="edit-profile-page" class="m-4">
     <section id="full-screen-picture" class="fixed z-50 top-0 left-0 w-full h-full flex-center">
         <button id="close-button" class="fixed top-4 right-4 flex-center text-4xl duration-150 hover:text-5xl" on:click={closeImage}>
             <i class="flex-center bi bi-x"></i>
