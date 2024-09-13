@@ -10,7 +10,7 @@
             <div id="company-information" class="my-8">
                 <div id="statement-container" class="text-container">
                     <h1 class="page-title">We are TypeCrafters</h1>
-                    <p class="text-lg">
+                    <p class="p">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, corrupti nesciunt, minus sed incidunt
                         atque odio eos aperiam quis laudantium cumque amet ab quia ex doloremque possimus sapiente qui impedit.
                         Quidem accusantium, temporibus error dolor harum porro vero repellat sint unde. Tempora est nostrum
@@ -26,7 +26,7 @@
                 </div>
                 <div id="vision-container" class="text-container">
                     <h2 class="page-subtitle">Our vision</h2>
-                    <p>
+                    <p class="p">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi aperiam temporibus nam a,
                         consequatur suscipit reprehenderit culpa magnam quisquam. Architecto non, accusamus est optio aliquid
                         corrupti ex quis a! Aliquam neque itaque laboriosam sit, placeat obcaecati suscipit cupiditate dolorem
@@ -36,7 +36,7 @@
                 </div>
                 <div id="mission-container" class="text-container">
                     <h2 class="page-subtitle">Our mission</h2>
-                    <p>
+                    <p class="p">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi aperiam temporibus nam a,
                         consequatur suscipit reprehenderit culpa magnam quisquam. Architecto non, accusamus est optio aliquid
                         corrupti ex quis a! Aliquam neque itaque laboriosam sit, placeat obcaecati suscipit cupiditate dolorem

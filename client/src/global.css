@@ -65,3 +65,7 @@ body {
 .link-red {
     @apply hover:text-red-700 active:text-red-800 duration-150;
 }
+
+.p {
+    @apply text-lg;
+}
